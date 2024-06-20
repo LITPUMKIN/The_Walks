@@ -1,0 +1,109 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#explain_text{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn_css {
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2.3vw;
+    font-weight: 800;
+    height: 20vw;
+    width: 20vw;
+    justify-content: center;
+    letter-spacing: 2px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    margin: 1vw;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#sw_60 {
+    color: rgb(63, 87, 159);
+    border-color: rgb(63, 87, 159);
+}
+
+#sw_60:hover {
+    border-color: rgb(63, 87, 159);
+    color: white;
+    fill: rgb(63, 87, 159);
+    background-color: rgb(63, 87, 159);
+}
+
+#sw_16 {
+    color: rgb(90, 129, 102);
+    border-color: rgb(90, 129, 102);
+}
+
+#sw_16:hover {
+    border-color: rgb(90, 129, 102);
+    color: white;
+    fill: rgb(90, 129, 102);
+    background-color: rgb(90, 129, 102);
+}
+
+#sw_06 {
+    color: rgb(234, 191, 87);
+    border-color: rgb(234, 191, 87);
+}
+
+#sw_06:hover {
+    border-color: rgb(234, 191, 87);
+    color: white;
+    fill: rgb(234, 191, 87);
+    background-color: rgb(234, 191, 87);
+}
+
+@media (min-width: 750px) {
+    .btn_css {
+        min-width: 170px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .btn_css {
+        height: 40vw;
+        width: 40vw;
+        margin: 2vw;
+        font-size: 4vw;
+    }
+    #explain_text{
+        margin-bottom: 10vw;
+    }
+}

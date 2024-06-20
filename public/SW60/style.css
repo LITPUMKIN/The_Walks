@@ -1,0 +1,112 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#NB {
+    color: rgb(63, 87, 159);
+    border: 2px solid rgb(63, 87, 159);
+}
+
+#NB:before {
+    background-color: rgb(215, 219, 230);
+}
+
+#NB:hover:before {
+    background-color: rgb(152, 164, 200);
+}
+
+
+.sw_60 {
+    background-color: transparent;
+    border: 2px solid #5c5c5c;
+    box-sizing: border-box;
+    color: #666666;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 3vw;
+    padding: 20px 40px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 1vw;
+}
+
+.sw_60:hover,
+.sw_60:active {
+    outline: 0;
+}
+
+.sw_60:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sw_60:before {
+    background-color: #d1d1d1;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -1vw;
+    top: -1vw;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+}
+
+.sw_60:hover:before {
+    background-color: #6a6a6a;
+    opacity: 20;
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sw_60 {
+        margin: 2vw;
+        font-size: 3.5vw;
+    }
+
+    .sw_60:before {
+        right: -2vw;
+        top: -2vw;
+    }
+}
+
+
+.sw_60:not(#NB) {
+    position: relative;
+}
+
+.sw_60:not(#NB)::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: content 300ms ease-in;
+}
+
+.sw_60:not(#NB):hover::after {
+    content: "COMING SOON";
+    font-size: 50%;
+    font-weight: 900;
+    font-style: italic;
+    color: #ffffff;
+}

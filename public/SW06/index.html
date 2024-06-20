@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>SoundWalk06+</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <p class="title">To Start SoundWalk 16</p>
+            <p class="title">Click Memories to Select a Prompt</p>
+            <p class="title">Listen to the Prompt by Clicking the Play Button</p>
+            <button class="sw_06" id="select_tts">Select Memories</button>
+            <button class="sw_06" id="tts_btn">Play</button>
+            <button class="sw_06" id="example">Play an Example</button>
+        </div>
+        <div class="container">
+            <p class="title">What's Your Secret To Making A Non-Place Feel Personal? </p>
+            <p class="title">Share with others! See some examples below</p>
+            <p class="words">Something special I secretly do in the</p>
+            <select id="places">
+                <option value="/"> </option>
+                <option value="air">AirPort</option>
+                <option value="traffic">Busy Traffic Street</option>
+                <option value="gas">Gas Station</option>
+                <option value="tre">Movie Theater</option>
+                <option value="parking">Parking Lot</option>
+                <option value="subway">Subway</option>
+                <option value="mkt">Supermarket</option>
+                <option value="else">Other X-Places</option>
+            </select>
+            <p class="words">is/are</p>
+            <input class='input' id="user_input">
+            <p class="words">which makes me feel ______ , ______ !</p>
+            <input class='input' id="user_feeling">
+            <button class="sw_06" id="submit_btn">Share!</button>
+            <!-- <p id="end_text"></p> -->
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <p class="exg"><span class="bold">Non-places</span>, a term coined by French anthropologist Marc Augé, refer to
+                spaces of transience that lack
+                significance, identity, or relational value. These are places where people remain anonymous and engage
+                in standardized interactions, often focused on functionality and efficiency rather than creating
+                meaningful experiences or personal connections.</p>
+            <p class="exg"><span class="bold">Non-places</span> are typically characterized by their utilitarian design, lack of historical or cultural
+                references, and a sense of impermanence.</p>
+            <p class="exg"><span class="bold">Examples include airports, subways, shopping malls, and parking lot.</span></p>
+        </div>
+        <div class="container">
+            <p class="exg">"Something special I secretly do in the <span class="bold">supermarket is go to the free samples and try
+                    them all</span>. This
+                makes me
+                <span class="bold">happy because the sales person talks to me passionately,
+                    and I can have some interesting conversations
+                    with
+                    them. I can wave hi to them next time, and they will offer me more free sample food!</span>"
+            </p>
+            <p class="exg">"Something special I secretly do in the <span class="bold">movie theater is buy the middle seat of the end row every time</span>
+                because
+                there are no seats in front of me, just long walkways. <span class="bold">This makes me feel powerful, as if people
+                stepping up
+                are pilgrimaging towards me.</span>"</p>
+            <p class="exg">"Something special I secretly do in the <span class="bold">subway is stand on the very first platform where I can see the
+                subway
+                drivers stepping outside of the cab and wave to them as I board</span>. This makes me feel safe, <span class="bold">as if I know
+                the
+                person who carries me underground and they will drive me safely to my destination.</span>"</p>
+        </div>
+    </div>
+
+    <!-- import ml5.js music -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
+    <!-- import ml5.js library -->
+    <script src="https://unpkg.com/ml5@0.20.0-alpha.4/dist/ml5.min.js"></script>
+    <!-- import script -->
+    <script src="script_AI.js" type="text/javascript"></script>
+</body>
+
+</html>
