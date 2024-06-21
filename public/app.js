@@ -1,13 +1,13 @@
 document.getElementById("sw_60").addEventListener("click", (click) => {
-    window.location.href = "/SW60";
+    window.location.href = "/SW60/";
 });
 
 document.getElementById("sw_16").addEventListener("click", () => {
-    window.location.href = "/SW16";
+    window.location.href = "/SW16/";
 });
 
 document.getElementById("sw_06").addEventListener("click", () => {
-    window.location.href = "/SW06";
+    window.location.href = "/SW06/";
 });
 
 document.getElementById("sw_60").addEventListener("mouseover", () => {
